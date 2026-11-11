@@ -1,0 +1,13 @@
+definition,outcome,group,n,weighted_pct,se_pct
+ibd_self,sleep_disorder,IBD,62,21.0,8.4
+ibd_self,sleep_disorder,non-IBD,5028,7.1,0.6
+ibd_self,sleep_trouble,IBD,62,50.8,9.3
+ibd_self,sleep_trouble,non-IBD,5033,24.9,1.1
+ibd_self,short_sleep,IBD,62,55.1,8.7
+ibd_self,short_sleep,non-IBD,5025,37.2,1.2
+ibd_verif,sleep_disorder,IBD,43,16.7,8.2
+ibd_verif,sleep_disorder,non-IBD,5047,7.2,0.6
+ibd_verif,sleep_trouble,IBD,43,46.8,10.0
+ibd_verif,sleep_trouble,non-IBD,5052,25.0,1.1
+ibd_verif,short_sleep,IBD,43,55.2,9.5
+ibd_verif,short_sleep,non-IBD,5044,37.2,1.2

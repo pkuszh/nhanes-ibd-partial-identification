@@ -1,0 +1,7 @@
+definition,outcome,observed_OR,pct_inadmissible,median_OR,q2.5,q97.5
+ibd_self,sleep_disorder,3.45,0.3,6.44,3.74,23.26
+ibd_self,sleep_trouble,3.11,16.9,6.77,3.39,109.27
+ibd_self,short_sleep,2.08,7.0,3.86,2.22,49.03
+ibd_verif,sleep_disorder,2.58,14.2,3.67,2.63,8.08
+ibd_verif,sleep_trouble,2.64,15.9,4.29,2.7,28.46
+ibd_verif,short_sleep,2.08,15.6,3.16,2.12,18.42

@@ -1,0 +1,7 @@
+definition,outcome,observed_OR,region_low,region_high,critical_Sp_range
+ibd_self,sleep_disorder,3.45,3.48,273.66,0.9895-0.9895
+ibd_self,sleep_trouble,3.11,3.14,188.53,0.9919-0.9919
+ibd_self,short_sleep,2.08,2.09,418.67,0.9912-0.9912
+ibd_verif,sleep_disorder,2.58,2.6,1180.73,0.9914-0.9914
+ibd_verif,sleep_trouble,2.64,2.66,846.59,0.9932-0.9932
+ibd_verif,short_sleep,2.08,2.1,127.91,0.9931-0.9931

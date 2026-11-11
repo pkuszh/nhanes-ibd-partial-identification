@@ -1,0 +1,5 @@
+definition,n_cases,weighted_prev_pct,se_pct,ci_low,ci_high
+Self-reported IBD,62,1.23,0.28,0.68,1.78
+Colonoscopy-verified IBD,43,0.96,0.25,0.47,1.45
+Ulcerative colitis (self-report),53,0.97,0.25,0.49,1.45
+Crohn's disease (self-report),11,0.31,0.15,0.02,0.6

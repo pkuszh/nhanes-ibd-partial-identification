@@ -1,0 +1,19 @@
+definition,outcome,model,n,n_exposed,OR,ci_low,ci_high,p
+ibd_self,sleep_disorder,crude,3976,51,4.13,1.66,10.25,0.0023
+ibd_self,sleep_disorder,age+sex,3976,51,3.42,1.32,8.86,0.0112
+ibd_self,sleep_disorder,fully adjusted,3976,51,2.94,1.04,8.29,0.0419
+ibd_self,sleep_trouble,crude,3979,51,3.29,1.5,7.22,0.0029
+ibd_self,sleep_trouble,age+sex,3979,51,2.75,1.24,6.11,0.0131
+ibd_self,sleep_trouble,fully adjusted,3979,51,2.21,0.9,5.43,0.0828
+ibd_self,short_sleep,crude,3976,51,1.93,1.04,3.57,0.036
+ibd_self,short_sleep,age+sex,3976,51,1.93,1.0,3.71,0.0489
+ibd_self,short_sleep,fully adjusted,3976,51,1.87,0.98,3.56,0.056
+ibd_verif,sleep_disorder,crude,3976,35,3.04,1.05,8.8,0.0405
+ibd_verif,sleep_disorder,age+sex,3976,35,2.51,0.87,7.2,0.0878
+ibd_verif,sleep_disorder,fully adjusted,3976,35,2.01,0.65,6.2,0.2225
+ibd_verif,sleep_trouble,crude,3979,35,2.5,0.91,6.84,0.0744
+ibd_verif,sleep_trouble,age+sex,3979,35,2.13,0.77,5.9,0.1464
+ibd_verif,sleep_trouble,fully adjusted,3979,35,1.68,0.58,4.83,0.3383
+ibd_verif,short_sleep,crude,3976,35,2.04,1.03,4.02,0.0397
+ibd_verif,short_sleep,age+sex,3976,35,2.02,0.99,4.12,0.0526
+ibd_verif,short_sleep,fully adjusted,3976,35,1.99,0.98,4.01,0.0559
