@@ -3,7 +3,7 @@
 
 Panel A: 主结局（ibd_self × sleep_disorder）的偏倚调整 OR 分布（20,000 次抽样），
          叠加已发表的调整 OR 及其 95% CI。
-Panel B: 同一估计量的五种区间，按假设从少到多排列（宽→窄）：
+Panel B: 同一估计量的五种区间，按假设从少到多排列：
          识别区域 → 锚定区域 → Monte Carlo → 已发表 CI。
          信息：已发表的 CI 是最窄的，因为它假设得最多（Sp = 1）。
 
@@ -72,13 +72,13 @@ print(f"outside published CI: {out_ci:.1f}% | above published point: {above_pt:.
 
 # ---- 区间清单（自上而下：假设最少 → 假设最多；区间由宽到窄）----
 INTERVALS = [  # (label, low, high, point, color, assumption)
-    ("Identification region\n(no priors)", 3.48, 273.66, None, BLUE,
-     "only that Se, Sp reproduce the observed table"),
+    ("Identification region\n(no priors)", 3.48, None, None, BLUE,
+     "only that Se, Sp reproduce the observed table; unbounded above"),
     ("Anchor-based region\n(all 4 anchors)", 3.81, 48.55, None, BLUE,
      "Sp implied by each published US prevalence"),
     ("Anchor-based region\ndiagnosed anchors only", 3.81, 11.64, None, BLUE,
      "as above, excluding treated-prevalence anchor"),
-    ("Probabilistic bias analysis\n(20,000 draws)", lo, hi, med, BLUE,
+    ("Probabilistic bias analysis\n(19,935 admissible draws)", lo, hi, med, BLUE,
      "priors: Se ~ Beta(8,2), prevalence ~ U(0.4%, 1.3%)"),
     ("Published adjusted model\n(assumes no measurement error)", PUB_LO, PUB_HI, PUB_PT, RED,
      "Sp = 1, implicitly"),
@@ -122,9 +122,16 @@ ax1.text(0.02, 0.60,
 
 # ================= Panel B =================
 ys = np.arange(len(INTERVALS))[::-1]
+XMAX_ARROW = 430
 for y, (lab, l, h, pt, c, assum) in zip(ys, INTERVALS):
-    ax2.plot([l, h], [y, y], color=c, lw=2.4 if pt is not None else 4.2,
-             solid_capstyle="butt", alpha=0.95 if pt is not None else 0.55)
+    if h is None:   # open-ended interval (identification region)
+        ax2.plot([l, XMAX_ARROW], [y, y], color=c, lw=4.2,
+                 solid_capstyle="butt", alpha=0.55)
+        ax2.annotate("", xy=(470, y), xytext=(432, y),
+                     arrowprops=dict(arrowstyle="-|>", color=c, lw=2.6))
+    else:
+        ax2.plot([l, h], [y, y], color=c, lw=2.4 if pt is not None else 4.2,
+                 solid_capstyle="butt", alpha=0.95 if pt is not None else 0.55)
     if pt is not None:
         ax2.plot(pt, y, "o", color=c, ms=4.5, zorder=5)
     ax2.text(1.06, y, assum, fontsize=6.2, color=GRAY, va="center", ha="left",

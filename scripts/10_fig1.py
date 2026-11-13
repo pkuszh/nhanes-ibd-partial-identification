@@ -60,7 +60,7 @@ varrow(1.55, 8.79, 8.14)
 side_label(1.67, 8.46, "arthritis questionnaire\n(ages 20–69) after MEC")
 box(0.15, 7.45, 2.8, 0.6, "5,106 with an ARQ record")
 varrow(1.55, 7.39, 6.74)
-side_label(1.67, 7.06, "12 answered “don’t know” to\n≥1 item; 10 undefined")
+side_label(1.67, 7.06, "12 answered “don’t know” to\n≥1 item (10 not definable)")
 box(0.15, 6.05, 2.8, 0.6,
     "5,096 (99.8%) definable status\nweighted analyses", bold=True, fs=6.6)
 varrow(1.55, 5.99, 5.34)
@@ -100,8 +100,8 @@ box(7.7, 4.65, 2.25, 0.6, "5-item coding scheme\n(Table 4, S6)", fc=LGRAY, ec=GR
 
 # ================= bottom banner =================
 box(0.15, 3.55, 9.8, 0.6,
-    "Weighted 2×2 table → identification region 3.48–273.66 → anchored region 3.81–48.55 "
-    "→ Monte Carlo, 20,000 draws (Figs 2–3)",
+    "Weighted 2×2 table → identification region: OR > 3.45, unbounded above → anchored region "
+    "3.81–48.55 → Monte Carlo, 19,935 admissible draws (Figs 2–3)",
     fc="white", ec=BLUE, fs=6.2)
 varrow(1.55, 4.59, 4.21)
 varrow(5.65, 5.99, 4.21)
