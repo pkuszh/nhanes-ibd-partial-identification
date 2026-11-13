@@ -20,8 +20,9 @@ these studies rests on an unmeasured specificity:
    associations (self-reported IBD, n = 62/3,976 complete cases; OR 2.94,
    95% CI 1.04–8.29).
 2. **Identification region** — with no priors on (sensitivity, specificity),
-   the observed data are compatible with true ORs anywhere in
-   [3.48, 273.66]; the critical specificity is Sp* = 0.9895.
+   the observed data are compatible with true ORs exceeding 3.45 with no finite
+   upper bound (they already exceed 50 at a specificity of 0.99); the critical
+   specificity is Sp* = 0.9895.
 3. **Anchored bounds** — anchoring specificity to external US IBD prevalence
    estimates narrows the OR to [3.81, 48.55]; the three *diagnosed*-prevalence
    anchors alone give [3.81, 11.64].
@@ -98,7 +99,7 @@ Code: MIT License. Derived data (`data/analysis.csv`): CC-BY 4.0.
 ## Citation
 
 If you reuse this package, please cite the manuscript and this repository
-(DOI: 10.5281/zenodo.XXXXXXX — assigned by Zenodo upon release).
+(DOI: 10.5281/zenodo.24137259, which resolves to the latest version).
 
 ## Correspondence
 
